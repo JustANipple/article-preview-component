@@ -52,19 +52,21 @@ body {
 .container {
     background-color: white;
     margin-inline: 1.5rem;
-    display: grid;
-    grid-template-rows: 0.85fr 2fr;
+    display: flex;
+    flex-direction: column;
 }
 
 .drawer {
     background-image: url(images/drawers.jpg);
     background-size: cover;
+    background-position-y: -1rem;
+    width: 100%;
+    height: 12.5rem;
     background-repeat: no-repeat;
-    background-position-y: -15px;
 }
 
 .article {
-    padding-block: 2.25rem 1rem;
+    padding-block: 2.25rem 0rem;
     padding-inline: 2rem;
     display: flex;
     flex-direction: column;
@@ -86,4 +88,21 @@ body {
     font-size: 0.825rem;
     color: var(--par-clr);
     padding-right: 0.1rem;
+}
+
+.cont-footer {
+    display: flex;
+}
+
+.avatar {
+    display: flex;
+}
+
+.avatar-img img {
+    max-width: 3rem;
+    border-radius: 3rem;
+}
+
+.share {
+    display: none;
 }
