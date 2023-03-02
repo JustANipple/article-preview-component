@@ -75,7 +75,6 @@ body {
     padding-inline: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
 }
 
 .text {
@@ -176,4 +175,28 @@ body {
   position: absolute;
   right: 0;
   margin-right: 2rem;
+}
+
+@media screen and (min-width: 425px) {
+  
+  /* ====== Main ====== */
+  .container {
+    max-width: 45.5rem;
+  }
+
+  /* ====== Image ====== */
+  .drawer {
+    background-position-y: unset;
+    height: unset;
+  }
+
+  /* ====== Article ====== */
+  .article {
+    padding-block: 3rem 0;
+    padding-inline: 3rem;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
 }
