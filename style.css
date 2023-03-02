@@ -112,7 +112,7 @@ body {
 .avatar {
   display: flex;
   gap: 1rem;
-  padding-block: 1rem;
+  padding-block: 0.75rem;
   padding-inline-start: 2rem;
 }
 
@@ -140,7 +140,7 @@ body {
 /* ====== Social ====== */
 .share {
   background-color: var(--title-clr);
-  padding-block: 1.375rem;
+  padding-block: 1.5rem;
   padding-inline-start: 2rem;
   display: none;
 }
@@ -176,8 +176,4 @@ body {
   position: absolute;
   right: 0;
   margin-right: 2rem;
-}
-
-.share-btn img {
-  width: rem;
 }
