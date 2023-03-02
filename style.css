@@ -48,3 +48,21 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+/* ====== Main ====== */
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+/* ====== Desktop view ====== */
+@media screen and (min-width: 425px) {
+  /* ====== Main ====== */
+  .container {
+    flex-direction: row;
+  }
+}
