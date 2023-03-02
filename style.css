@@ -137,11 +137,14 @@ body {
   border-radius: 1rem;
   background-color: var(--bg-clr);
   z-index: 1;
+  transition: box-shadow 0.5s ease-in-out;
 }
 
 /* ====== Social ====== */
 .social {
-  display: none;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
   position: absolute;
   left: 0;
   right: 0;
@@ -150,6 +153,7 @@ body {
   align-items: center;
   gap: 1rem;
   padding-inline: 2rem;
+  transition: visibility 0.3s ease, opacity 0.3s ease-in-out;
 }
 
 .share-text {
@@ -164,6 +168,11 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+
+.social-icons div {
+  transition: filter 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 /* ====== Desktop view ====== */
