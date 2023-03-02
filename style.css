@@ -97,67 +97,52 @@ body {
 
 /* ====== Footer ====== */
 .cont-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    padding-block: 1rem;
-    padding-inline: 2rem;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
+.inner-footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* ====== Avatar ====== */
 .avatar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
+  padding-block: 1rem;
+  padding-inline-start: 2rem;
+}
+
+.avatar-img img {
+  max-width: 2.5rem;
+  border-radius: 2rem;
 }
 
 .avatar-info {
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
+  gap: 0.25rem;
+  font-size: 0.825rem;
 }
 
 .avatar-name {
-  font-size: 0.825rem;
-  font-weight: var(--fw-bold);
   color: var(--title-clr);
+  font-weight: var(--fw-bold);
 }
 
 .avatar-date {
-  font-size: 0.825rem;
   color: var(--date-clr);
 }
 
-.avatar-img img {
-    max-width: 2.5rem;
-    border-radius: 4rem;
-}
-
-.share-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--bg-clr);
-  padding: 0.5rem;
-  aspect-ratio: 1/1;
-  border-radius: 1rem;
-}
-
-.avatar {
-  /*display: none;*/
-}
-
+/* ====== Social ====== */
 .share {
-  display: flex;
-  display: none;
-  position: absolute;
-  left: 0;
-  right: 0;
-  align-items: center;
   background-color: var(--title-clr);
-  padding-block: 1.325rem;
-  padding-inline: 2rem;
+  padding-block: 1.375rem;
+  padding-inline-start: 2rem;
+  display: none;
 }
 
 .left-box {
@@ -168,9 +153,9 @@ body {
 
 .share-text {
   text-transform: uppercase;
-  letter-spacing: 0.35rem;
   color: var(--date-clr);
-  font-size: 0.75rem;
+  font-size: 0.825rem;
+  letter-spacing: 0.313rem;
 }
 
 .social-icons {
@@ -179,7 +164,20 @@ body {
   gap: 1rem;
 }
 
+/* ====== Share button ====== */
 .share-btn {
-  z-index: 1;
-  margin-left: auto;
+  padding: 0.5rem;
+  background-color: var(--bg-clr);
+  border-radius: 2rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  margin-right: 2rem;
+}
+
+.share-btn img {
+  width: rem;
 }
